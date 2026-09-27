@@ -21,6 +21,7 @@ jobs:
         uses: Platane/snk/svg-only@aebc3a92857730857d5a96010a3538f16bbec662
         with:
           github_user_name: sharmajitendrakumar51-art
+          github_token: ${{ secrets.SNAKE_TOKEN }}
           outputs: |
             dist/github-snake.svg
             dist/github-snake-dark.svg?palette=github-dark
