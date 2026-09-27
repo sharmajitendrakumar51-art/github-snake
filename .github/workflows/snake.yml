@@ -18,7 +18,7 @@ jobs:
 
     steps:
       - name: Generate GitHub Contribution Snake
-        uses: Platane/snk/svg-only@v3
+        uses: Platane/snk/svg-only@aebc3a92857730857d5a96010a3538f16bbec662
         with:
           github_user_name: sharmajitendrakumar51-art
           outputs: |
@@ -26,7 +26,7 @@ jobs:
             dist/github-snake-dark.svg?palette=github-dark
 
       - name: Publish Snake
-        uses: crazy-max/ghaction-github-pages@v3.1.0
+        uses: crazy-max/ghaction-github-pages@c0d7ff0487ee0415efb7f32dab10ea880330b1dd
         with:
           target_branch: output
           build_dir: dist
